@@ -4,10 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/bootstrap-3.4.1-dist/css/bootstrap-theme.min.css"> -->
+
+    <title>Boot</title>
 </head>
 
 <body>
+    <script src="/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="/bootstrap-3.4.1-dist/jquery-3.4.1.min.js"></script>
+    <h1> boot strap 101</h1>
+    <style>
+        /* body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            background-color: white;
+        } */
+        
+        .thumb {
+            padding: 60px 10px;
+            text-align: center;
+            background-color: #ddd;
+        }
+        
+        .thumb:nth-child(even) {
+            background: #eee;
+        }
+        
+        h1,
+        h2 {
+            margin: 30px 0;
+        }
+        
+        .container-fluid {
+            background: #ccc;
+            margin: 50px auto;
+            height: 200px;
+        }
+        /* .container {
+            background: #ccc;
+            margin: 50px auto;
+            height: 200px;
+        } */
+        
+        .col-md-8 {
+            background: rgb(201, 191, 191);
+        }
+        
+        .col-md-4 {
+            background: rgb(182, 182, 170);
+        }
+    </style>
+
+    <div style="max-width: 1200; margin: 0 auto; padding: 10px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12 content">
+                    <h3>Content</h3>
+                    <p><strong>Large screens: </strong>8 columns wide</p>
+                    <p><strong>Medium screens: </strong>6 columns wide</p>
+                    <p><strong>Small screens: </strong>12 columns wide</p>
+                </div>
+                <div class="col-md-4 col-sm-6  col-xs-12 sidebar">
+                    <h3>Content</h3>
+                    <p><strong>Large screens: </strong>8 columns wide</p>
+                    <p><strong>Medium screens: </strong>6 columns wide</p>
+                    <p><strong>Small screens: </strong>12 columns wide</p>
+                </div>
+
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb"> thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb"> thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb"> thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb"> thumbnail</div>
+                <div class="col-md-2 col-sm-4 col-xs-6 thumb"> thumbnail</div>
+                <div class="col-md-offset-0 col-md-2 col-sm-offset-2 col-sm-2 col-xs-6 thumb"> thumbnail</div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
 
 </body>
 
