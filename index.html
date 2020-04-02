@@ -80,9 +80,316 @@
                 <div class="col-md-2 col-sm-4 col-xs-6 thumb"> thumbnail</div>
                 <div class="col-md-2 col-sm-4 col-xs-6 thumb"> thumbnail</div>
                 <div class="col-md-2 col-sm-4 col-xs-6 thumb"> thumbnail</div>
+                <!--  offset -->
                 <div class="col-md-offset-0 col-md-2 col-sm-offset-2 col-sm-2 col-xs-6 thumb"> thumbnail</div>
+                <!-- push  normal way-->
+                <div class="col-xs-12 col-sm-4 col-md-6 col-lg-8 thumb"> thumbnail</div>
+                <div class="col-xs-12 col-sm-4 col-md-6 col-lg-4 thumb"> thumbnail</div>
+                <!-- push & pull bootst way-->
+                <div class="col-xs-12  col-md-6 col-lg-8 col-lg-push-4 thumb"> content</div>
+                <div class="col-xs-12  col-md-6 col-lg-4 col-lg-pull-8 thumb"> sidebar</div>
+                <!-- push & pull with switch bootst way -->
+                <div class="col-xs-12  col-md-6 col-md-push-6 col-lg-8 col-lg-push-0  thumb"> content</div>
+                <div class="col-xs-12  col-md-6 col-md-pull-6 col-lg-4 col-lg-pull-0  thumb"> sidebar</div>
+            </div>
+
+
+
+            <!-- clear fix -->
+            <div class="row" style="margin-top: 20; padding: 10px;">
+                <div class=" col-xs-6 thumb">
+                    <h1> Heading 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, iure id! Reprehenderit consequatur numquam, placeat ipsam ratione expedita. Ducimus in dolore tempore, odio illo ratione. Ipsum blanditiis dolores eius iste.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste quibusdam pariatur!</p>
+                </div>
+                <div class=" col-xs-6 thumb">
+                    <h1> Heading 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cupiditate at corrupti numquam adipisci aperiam totam, incidunt architecto? Debitis reiciendis explicabo quod assumenda beatae laudantium recusandae architecto odio voluptates
+                        provident.
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste quibusdam pariatur!</p>
+                </div>
+                <div class="clearfix"></div>
+                <div class=" col-xs-6 thumb">
+                    <h1> Heading 3</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum cumque maxime iure, dolore ab eos rem sequi hic nam laudantium amet. Quis unde possimus a voluptates laudantium quidem. Officiis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste quibusdam pariatur!</p>
+                </div>
+
+                <div class=" col-xs-6 thumb">
+                    <h1> Heading 4</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ad. Corrupti inventore aperiam rerum? Laboriosam eaque commodi aliquam inventore pariatur similique incidunt dolor in. Suscipit, aliquam exercitationem. Quod, sunt aperiam?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste quibusdam pariatur!</p>
+                </div>
+
+                <div class=" col-xs-6 thumb">
+                    <h1> Heading 5</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium fugit odit incidunt ex quae sint adipisci voluptatem nihil ratione excepturi. Ducimus excepturi ab facilis voluptatum deleniti ad dolorum debitis maiores!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste quibusdam pariatur!</p>
+                </div>
+                <div class=" col-xs-6 thumb">
+                    <h1> Heading 6</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium fugit odit incidunt ex quae sint adipisci voluptatem nihil ratione excepturi. Ducimus excepturi ab facilis voluptatum deleniti ad dolorum debitis maiores!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste quibusdam pariatur!</p>
+                </div>
 
             </div>
+
+
+
+            <!-- nth chiled fix AND TEXT styles -->
+            <style>
+                .thumb2:nth-child(odd) {
+                    clear: both;
+                }
+                
+                .thumb2 {
+                    padding: 60px 10px;
+                    text-align: center;
+                    background-color: #ddd;
+                }
+                
+                .thumb2:nth-child(even) {
+                    background: #eee;
+                }
+                
+                h1,
+                h2 {
+                    margin: 30px 0;
+                }
+                
+                .container-fluid {
+                    background: #ccc;
+                    margin: 50px auto;
+                    height: 200px;
+                }
+            </style>
+            <div class="row" style="margin-top: 20; padding: 10px;">
+                <div class=" col-xs-6 thumb2">
+                    <h1> Heading 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, iure id! Reprehenderit consequatur numquam, placeat ipsam ratione expedita. Ducimus in dolore tempore, odio illo ratione. Ipsum blanditiis dolores eius iste.</p>
+                    <p><span class="h1">Lorem</span> ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste
+                        quibusdam pariatur!</p>
+                </div>
+                <div class=" col-xs-6 thumb2">
+                    <h1> Heading 2</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores cupiditate at corrupti numquam adipisci aperiam totam, incidunt architecto? Debitis reiciendis explicabo quod assumenda beatae laudantium recusandae architecto odio voluptates
+                        provident.
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste quibusdam pariatur!</p>
+                </div>
+
+                <div class=" col-xs-6 thumb2">
+                    <h1> Heading 3</h1>
+                    <p class="h1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum cumque maxime iure, dolore ab eos rem sequi hic nam laudantium amet. Quis unde possimus a voluptates laudantium quidem. Officiis.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste quibusdam pariatur!</p>
+                </div>
+
+                <div class=" col-xs-6 thumb2">
+                    <h1> Heading 4</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, ad. Corrupti inventore aperiam rerum? Laboriosam eaque commodi aliquam inventore pariatur similique incidunt dolor in. Suscipit, aliquam exercitationem. Quod, sunt aperiam?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste quibusdam pariatur!</p>
+                </div>
+
+                <div class=" col-xs-6 thumb2">
+                    <h1> Heading 5</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium fugit odit incidunt ex quae sint adipisci voluptatem nihil ratione excepturi. Ducimus excepturi ab facilis voluptatum deleniti ad dolorum debitis maiores!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste quibusdam pariatur!</p>
+                </div>
+                <div class=" col-xs-6 thumb2">
+                    <h1> Heading 6</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium fugit odit incidunt ex quae sint adipisci voluptatem nihil ratione excepturi. Ducimus excepturi ab facilis voluptatum deleniti ad dolorum debitis maiores!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate iure quaerat assumenda natus, nobis debitis ullam officia praesentium nesciunt tempore eveniet quae reiciendis odit vel obcaecati. Minima iste quibusdam pariatur!</p>
+                </div>
+
+            </div>
+
+
+            <!-- list styles  -->
+            <div class="row" style="margin-top:20px"></div>
+            <ul>
+                <li>man</li>
+                <li>sausage</li>
+                <li>spicy chiken</li>
+                <li>quorn</li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>man</li>
+                <li>sausage</li>
+                <li>spicy chiken</li>
+                <li>quorn</li>
+            </ul>
+            <ul class="list-inline">
+                <li>man</li>
+                <li>sausage</li>
+                <li>spicy chiken</li>
+                <li>quorn</li>
+            </ul>
+            <ol>
+                <li>monkey</li>
+                <li>panter</li>
+                <li>meerkat</li>
+            </ol>
+            <ol class="list-unstyled">
+                <li>monkey</li>
+                <li>panter</li>
+                <li>meerkat</li>
+            </ol>
+            <ol class="list-inline">
+                <li>monkey</li>
+                <li>panter</li>
+                <li>meerkat</li>
+            </ol>
+            <dl>
+                <dt>Ninja</dt>
+                <dd>There is no definition for ninja</dd>
+                <dt>Ninja man </dt>
+                <dd>There is no definition for ninja</dd>
+                <dt>Ninja</dt>
+                <dd>There is no definition for ninja</dd>
+                <dt>Ninja man </dt>
+                <dd>There is no definition for ninja</dd>
+
+            </dl>
+            <dl class="dl-horizontal">
+                <dt>Ninja</dt>
+                <dd>There is no definition for ninja</dd>
+                <dt>Ninja man </dt>
+                <dd>There is no definition for ninja</dd>
+                <dt>Ninja</dt>
+                <dd>There is no definition for ninja</dd>
+                <dt>Ninja man </dt>
+                <dd>There is no definition for ninja</dd>
+
+            </dl>
+
+            <!--  button style  -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>button styles (no class)</h1>
+                    <a href="#">Anchor tag</a>
+                    <button>Button tag </button>
+                    <input type="submit" value="submit">
+                </div>
+
+                <div class="col-xs-12">
+                    <h1>The btn class </h1>
+                    <a href="#" class="btn btn-default">Anchor tag</a>
+                    <button class="btn btn-default">Button tag </button>
+                    <input class=" btn btn-default" type="submit" value="submit">
+                </div>
+
+                <div class="col-xs-12">
+                    <h1>Contextual class </h1>
+                    <a href="#" class="btn btn-default">default</a>
+                    <a href="#" class="btn btn-primary">primery</a>
+                    <a href="#" class="btn btn-info">info</a>
+                    <a href="#" class="btn btn-warning">warning </a>
+                    <a href="#" class="btn btn-danger">danger</a>
+                    <a href="#" class="btn btn-success">submit </a>
+                </div>
+
+                <div class="col-xs-12">
+                    <h1>size class </h1>
+                    <a href="#" class="btn btn-default btn-xs">e-small</a>
+                    <button class="btn btn-default btn-sm">sm </button>
+                    <input class=" btn btn-default btn-lg" type="submit" value="lg">
+                </div>
+
+                <div class="col-xs-12">
+                    <h1>active and disabled </h1>
+                    <a href="#" class="btn btn-default active">active</a>
+                    <a href="#" class="btn btn-default disabled">disabled</a>
+                    <a href="#" class="btn btn-primary active">active</a>
+                    <a href="#" class="btn btn-primary disabled">disabled </a>
+                    <button class="btn btn-default " disabled="disabled">button</button>
+
+                </div>
+
+            </div>
+
+            <!-- image styles -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <img src="robot.jpg">
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <img src="robot.jpg">
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <img src="robot.jpg">
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <img src="robot.jpg">
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                        <img src="robot.jpg" class="img-responsive img-rounded img-thumbnail center-block ">
+                    </div>
+                    <div class="col-xs-12 col-sm-3 ">
+                        <img src="robot.jpg" class="img-responsive img-circle img-thumbnail center-block">
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <img src="robot.jpg" class="img-responsive img-circle center-block">
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <img src="robot.jpg" class="img-responsive img-circle center-block">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- visibility class -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <img src="robot.jpg" class="img-responsive img-rounded img-thumbnail center-block ">
+                </div>
+                <div class="col-xs-12 col-sm-3 visible-md">
+                    <img src="robot.jpg" class="img-responsive img-circle img-thumbnail center-block">
+                </div>
+                <div class="col-xs-12 col-sm-3 hidden-xs">
+                    <img src="robot.jpg" class="img-responsive img-circle center-block">
+                </div>
+                <div class="col-xs-12 col-sm-3 hidden-lg">
+                    <img src="robot.jpg" class="img-responsive img-circle center-block">
+                </div>
+
+
+                <div class="row" style="margin-top:50px ;">
+                    <div class="col-xs-6 ">
+                        <span style="width:40%; padding:20px; background:pink " class="visible-md-inline ">YAY</span>
+                        <span style="width:40%; padding:20px; background:pink " class="visible-md-inline-block">YAY</span>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- drop down menu -->
+            <div class="dropdown" style="position: relative; margin: 20px;">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Meats <div class="caret"></div>
+                 </button>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header" style="text-align: center;">Meaty</li>
+                    <li><a href="">Ham</a></li>
+                    <li class="diabled"><a href="">sausage</a></li>
+                    <li><a href="">chicken</a></li>
+                    <li class="dropdown-header" style="text-align: center;">veggi</li>
+                    <li><a href="">quorn </a></li>
+                    <li><a href="">tofu</a></li>
+
+                </ul>
+
+
+
+            </div>
+
+
 
 
 
@@ -90,6 +397,8 @@
 
     </div>
 
+    <script src="/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="/bootstrap-3.4.1-dist/jquery-3.4.1.min.js"></script>
 </body>
 
 </html>
